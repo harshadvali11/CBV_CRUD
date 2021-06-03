@@ -12,7 +12,8 @@
             <ol>
                 <h1>list of Schools</h1>
                 {% for school in schools %}
-                <li>{{school}}</li>
+                    
+                    <li><a href='{{school.pk}}'>{{school}}</a></li>
                 {% endfor %}
             </ol>
         {% else %}
